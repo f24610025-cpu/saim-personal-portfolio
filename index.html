@@ -1,0 +1,399 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <meta
+      name="description"
+      content="Personal portfolio of Saim, a first-year student in Bachelor's in Information Technology at the National University of Technology (NUTECH), learning HTML, CSS, and JavaScript."
+    />
+    <title>Saim | First-Year IT Student Portfolio</title>
+
+    <!-- Google Fonts: Newsreader for headings, Source Sans 3 for body text -->
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Newsreader:opsz,wght@6..72,500;6..72,650&family=Source+Sans+3:wght@400;500;600;700&display=swap"
+      rel="stylesheet"
+    />
+
+    <!-- Font Awesome CDN for skill, social, and menu icons -->
+    <link
+      rel="stylesheet"
+      href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.2/css/all.min.css"
+      crossorigin="anonymous"
+      referrerpolicy="no-referrer"
+    />
+
+    <link rel="stylesheet" href="css/styles.css" />
+  </head>
+  <body>
+    <!-- Skip link: keyboard users can jump past the sticky nav -->
+    <a class="skip-link" href="#main">Skip to main content</a>
+
+    <header class="site-header">
+      <div class="container header-inner">
+        <a class="logo" href="#home">Saim</a>
+
+        <!-- aria-controls points to the nav we open on small screens -->
+        <button
+          class="nav-toggle"
+          type="button"
+          aria-expanded="false"
+          aria-controls="site-nav"
+          aria-label="Open menu"
+        >
+          <span class="nav-toggle-bar"></span>
+          <span class="nav-toggle-bar"></span>
+          <span class="nav-toggle-bar"></span>
+        </button>
+
+        <nav id="site-nav" class="site-nav" aria-label="Primary">
+          <ul class="nav-list">
+            <li><a href="#home">Home</a></li>
+            <li><a href="#about">About</a></li>
+            <li><a href="#skills">Skills</a></li>
+            <li><a href="#projects">Projects</a></li>
+            <li><a href="#contact">Contact</a></li>
+          </ul>
+        </nav>
+      </div>
+    </header>
+
+    <main id="main">
+      <section id="home" class="hero" aria-labelledby="hero-title">
+        <div class="container hero-inner">
+          <div class="hero-copy">
+            <p class="eyebrow">National University of Technology (NUTECH)</p>
+            <h1 id="hero-title">Saim</h1>
+            <p class="tagline">
+              First-year student in Bachelor's in Information Technology,
+              learning web development with HTML, CSS, and JavaScript.
+            </p>
+            <div class="hero-actions">
+              <a class="btn btn-primary" href="#projects">View projects</a>
+              <a class="btn btn-secondary" href="assets/cv/saim-cv.pdf" download>
+                <i class="fa-solid fa-file-arrow-down" aria-hidden="true"></i>
+                Download CV
+              </a>
+            </div>
+          </div>
+
+          <div class="hero-portrait">
+            <div class="portrait-frame">
+              <img
+                src="assets/images/profile.jpg"
+                alt="Portrait of Saim"
+                width="400"
+                height="500"
+              />
+            </div>
+          </div>
+        </div>
+      </section>
+
+      <!-- About bio is about 112 words (requirement: 80–120) -->
+      <section id="about" class="section about" aria-labelledby="about-title">
+        <div class="container">
+          <h2 id="about-title">About</h2>
+          <div class="about-layout">
+            <p class="about-bio">
+              I am Saim, a first-year student in Bachelor's in Information
+              Technology at the National University of Technology (NUTECH). I
+              am learning web development through this course project. Right now
+              I practice HTML5, CSS3, and vanilla JavaScript so I can structure
+              pages, style layouts, and add simple interactions without a
+              framework. This site is my Project 01: a single-page portfolio I
+              can explain in a review. I do not have professional clients, jobs,
+              or awards to list yet. I want to keep building small practice
+              pages, get better at responsive layout and accessibility, and grow
+              from there. You can download my CV, or reach me through the
+              contact section.
+            </p>
+            <aside class="about-card">
+              <p><strong>Currently</strong></p>
+              <p>
+                First-year student, Bachelor's in Information Technology,
+                learning the basics of the web.
+              </p>
+              <a class="btn btn-secondary" href="assets/cv/saim-cv.pdf" download>
+                <i class="fa-solid fa-file-arrow-down" aria-hidden="true"></i>
+                Download CV
+              </a>
+            </aside>
+          </div>
+        </div>
+      </section>
+
+      <section id="skills" class="section skills" aria-labelledby="skills-title">
+        <div class="container">
+          <h2 id="skills-title">Skills</h2>
+          <p class="section-lead">
+            These are topics I am currently learning. The bars show a rough
+            beginner level, not professional expertise.
+          </p>
+
+          <ul class="skills-grid">
+            <li class="skill-card">
+              <div class="skill-head">
+                <i class="fa-brands fa-html5" aria-hidden="true"></i>
+                <span>HTML5</span>
+              </div>
+              <div
+                class="progress"
+                role="img"
+                aria-label="HTML5 skill level, about 70 percent"
+              >
+                <div class="progress-bar" data-progress="70"></div>
+              </div>
+            </li>
+            <li class="skill-card">
+              <div class="skill-head">
+                <i class="fa-brands fa-css3-alt" aria-hidden="true"></i>
+                <span>CSS3</span>
+              </div>
+              <div
+                class="progress"
+                role="img"
+                aria-label="CSS3 skill level, about 65 percent"
+              >
+                <div class="progress-bar" data-progress="65"></div>
+              </div>
+            </li>
+            <li class="skill-card">
+              <div class="skill-head">
+                <i class="fa-brands fa-js" aria-hidden="true"></i>
+                <span>JavaScript</span>
+              </div>
+              <div
+                class="progress"
+                role="img"
+                aria-label="JavaScript skill level, about 45 percent"
+              >
+                <div class="progress-bar" data-progress="45"></div>
+              </div>
+            </li>
+            <li class="skill-card">
+              <div class="skill-head">
+                <i class="fa-brands fa-git-alt" aria-hidden="true"></i>
+                <span>Git &amp; GitHub</span>
+              </div>
+              <div
+                class="progress"
+                role="img"
+                aria-label="Git and GitHub skill level, about 50 percent"
+              >
+                <div class="progress-bar" data-progress="50"></div>
+              </div>
+            </li>
+            <li class="skill-card">
+              <div class="skill-head">
+                <i class="fa-solid fa-tablet-screen-button" aria-hidden="true"></i>
+                <span>Responsive layout</span>
+              </div>
+              <div
+                class="progress"
+                role="img"
+                aria-label="Responsive layout skill level, about 55 percent"
+              >
+                <div class="progress-bar" data-progress="55"></div>
+              </div>
+            </li>
+            <li class="skill-card">
+              <div class="skill-head">
+                <i class="fa-solid fa-universal-access" aria-hidden="true"></i>
+                <span>Accessibility basics</span>
+              </div>
+              <div
+                class="progress"
+                role="img"
+                aria-label="Accessibility basics skill level, about 40 percent"
+              >
+                <div class="progress-bar" data-progress="40"></div>
+              </div>
+            </li>
+          </ul>
+        </div>
+      </section>
+
+      <section id="projects" class="section projects" aria-labelledby="projects-title">
+        <div class="container">
+          <h2 id="projects-title">Projects</h2>
+          <p class="section-lead">
+            Beginner practice pieces for this course. They are not client work.
+          </p>
+
+          <div class="projects-grid">
+            <article class="project-card">
+              <div class="project-thumb project-thumb-a" aria-hidden="true">
+                <i class="fa-solid fa-window-maximize"></i>
+              </div>
+              <div class="project-body">
+                <h3>Personal portfolio</h3>
+                <p>
+                  This single-page site: semantic HTML, Flexbox and Grid, and
+                  vanilla JavaScript for the menu and contact form.
+                </p>
+                <p class="tags">HTML · CSS · JavaScript</p>
+                <p class="project-links">
+                  <!-- PLACEHOLDER: replace with your GitHub repo URL -->
+                  <a href="#">GitHub (add URL)</a>
+                  <a href="#home">Live page</a>
+                </p>
+              </div>
+            </article>
+
+            <article class="project-card">
+              <div class="project-thumb project-thumb-b" aria-hidden="true">
+                <i class="fa-solid fa-calendar-days"></i>
+              </div>
+              <div class="project-body">
+                <h3>Study timetable layout</h3>
+                <p>
+                  A practice layout for a weekly study plan. Replace this
+                  description and the links when you build the page.
+                </p>
+                <p class="tags">HTML · CSS Grid</p>
+                <p class="project-links">
+                  <!-- PLACEHOLDER: replace href="#" with your project GitHub URL -->
+                  <a href="#" aria-disabled="true">GitHub (add URL)</a>
+                  <span class="coming-soon">Live demo coming later</span>
+                </p>
+              </div>
+            </article>
+
+            <article class="project-card">
+              <div class="project-thumb project-thumb-c" aria-hidden="true">
+                <i class="fa-solid fa-note-sticky"></i>
+              </div>
+              <div class="project-body">
+                <h3>Notes card UI</h3>
+                <p>
+                  A small practice UI for note cards. Placeholder until you
+                  build and link a real practice page.
+                </p>
+                <p class="tags">HTML · CSS · JavaScript</p>
+                <p class="project-links">
+                  <!-- PLACEHOLDER: replace href="#" with your project GitHub URL -->
+                  <a href="#" aria-disabled="true">GitHub (add URL)</a>
+                  <span class="coming-soon">Live demo coming later</span>
+                </p>
+              </div>
+            </article>
+          </div>
+        </div>
+      </section>
+
+      <section id="contact" class="section contact" aria-labelledby="contact-title">
+        <div class="container">
+          <h2 id="contact-title">Contact</h2>
+          <p class="section-lead">
+            The form is checked in the browser. It does not send email until you
+            add a real address or an optional Formspree endpoint later.
+          </p>
+
+          <div class="contact-layout">
+            <form
+              id="contact-form"
+              class="contact-form"
+              action="https://formspree.io/f/maenonop"
+              method="POST"
+              novalidate
+            >
+              <div class="field">
+                <label for="name">Name</label>
+                <input
+                  id="name"
+                  name="name"
+                  type="text"
+                  autocomplete="name"
+                  aria-describedby="name-error"
+                />
+                <p id="name-error" class="error" role="alert"></p>
+              </div>
+
+              <div class="field">
+                <label for="email">Email</label>
+                <input
+                  id="email"
+                  name="email"
+                  type="email"
+                  autocomplete="email"
+                  aria-describedby="email-error"
+                />
+                <p id="email-error" class="error" role="alert"></p>
+              </div>
+
+              <div class="field">
+                <label for="message">Message</label>
+                <textarea
+                  id="message"
+                  name="message"
+                  rows="5"
+                  aria-describedby="message-error"
+                ></textarea>
+                <p id="message-error" class="error" role="alert"></p>
+              </div>
+
+              <button class="btn btn-primary" type="submit">Send message</button>
+              <p id="form-status" class="form-status" role="status" aria-live="polite"></p>
+            </form>
+
+            <div class="contact-aside">
+              <h3>Other ways to reach me</h3>
+              <ul class="contact-links">
+                <li>
+                  <!-- PLACEHOLDER: replace with your real email -->
+                  <a href="mailto:your.email@example.com">
+                    <i class="fa-solid fa-envelope" aria-hidden="true"></i>
+                    your.email@example.com
+                  </a>
+                </li>
+                <li>
+                  <!-- PLACEHOLDER: replace with your GitHub profile URL -->
+                  <a href="#">
+                    <i class="fa-brands fa-github" aria-hidden="true"></i>
+                    GitHub (add URL)
+                  </a>
+                </li>
+                <li>
+                  <!-- PLACEHOLDER: replace with your LinkedIn profile URL -->
+                  <a href="#">
+                    <i class="fa-brands fa-linkedin" aria-hidden="true"></i>
+                    LinkedIn (add URL)
+                  </a>
+                </li>
+              </ul>
+            </div>
+          </div>
+        </div>
+      </section>
+    </main>
+
+    <footer class="site-footer">
+      <div class="container footer-inner">
+        <p>&copy; 2026 Saim. First-year IT student portfolio.</p>
+        <ul class="footer-social">
+          <!-- PLACEHOLDER: same links as the contact section -->
+          <li>
+            <a href="mailto:your.email@example.com" aria-label="Email (placeholder)">
+              <i class="fa-solid fa-envelope" aria-hidden="true"></i>
+            </a>
+          </li>
+          <li>
+            <a href="#" aria-label="GitHub (add URL)">
+              <i class="fa-brands fa-github" aria-hidden="true"></i>
+            </a>
+          </li>
+          <li>
+            <a href="#" aria-label="LinkedIn (add URL)">
+              <i class="fa-brands fa-linkedin" aria-hidden="true"></i>
+            </a>
+          </li>
+        </ul>
+      </div>
+    </footer>
+
+    <script src="js/main.js"></script>
+  </body>
+</html>
